@@ -1,0 +1,500 @@
+   52  cd ~/Desktop/Data_Science_in_Economics_BEE2041/notes/lecture_notes
+   53  ls
+   54  git add L03_using_linux_command.md 
+   55  git commit -m "Finished lecture 3 notes"
+   56  cd ..
+   57  ls
+   58  cd ..
+   59  ls
+   60  git add Data_Science_in_Economics_BEE2041
+   61  cd ~
+   62  cd randomdir
+   63  ls
+   64  cd ~/Desktop/Data_Science_in_Economics_BEE2041
+   65  ls
+   66  man rmdir
+   67  mv ~/Desktop/Data_Science_in_Economics_BEE2041/COMPARISON_FILES ~/.Trash/
+   68  ls
+   69  mv ~/Desktop/Data_Science_in_Economics_BEE2041/DATE_FILES ~/.Trash/
+   70  ls
+   71  mv ~/Desktop/Data_Science_in_Economics_BEE2041/EXAM_SCORES ~/.Trash/
+   72  mv ~/Desktop/Data_Science_in_Economics_BEE2041/WB_DATA ~/.Trash/
+   73  mv ~/Desktop/Data_Science_in_Economics_BEE2041/linux_files2.zip ~/.Trash/
+   74  ls
+   75  cd
+   76  cd ~/Desktop/Data_Science_in_Economics_BEE2041/notes/lecture_notes
+   77  ls
+   78  cd ..
+   79  ls
+   80  cd ..
+   81  pwd
+   82  git add .
+   83  git commit -m "Add full module directory"
+   84  git push
+   85  ls -a
+   86  git status
+   87  git add .
+   88  cd ~/Desktop/Data_Science_in_Economics_BEE2041
+   89  git rev-parse --show-toplevel
+   90  ls -la | grep "\.git" || echo "no .git here"
+   91  cd ~/Desktop/Data_Science_in_Economics_BEE2041/notes
+   92  git rev-parse --show-toplevel
+   93  ls -la | grep "\.git" || echo "no .git here"
+   94  cd ..
+   95  git ls-files | head -n 50
+   96  git ls-files | cut -d/ -f1 | sort | uniq
+   97  git status --ignored
+   98  cat .gitignore
+   99  ls
+  100  touch path/to/datasets/ .gitkeep
+  101  cd ~/Desktop/Data_Science_in_Economics_BEE2041/notes
+  102  ls
+  103  cd lecture_notes/
+  104  ls
+  105  cd ..
+  106  cd ..
+  107  code .
+  108  ls -la
+  109  rm .gitkeep
+  110  ls
+  111  ls -la
+  112  code .
+  113  git add .
+  114  git commit -m "Add full module directory"
+  115  git push
+  116  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  117  code .
+  118  git add .
+  119  git commit -m "Took notes of Markdown key commands"
+  120  git push
+  121  git add .
+  122  git commit -m "Correction made"
+  123  git push
+  124  ls
+  125  cd datasets
+  126  touch dataset0.md
+  127  ls
+  128  cd .
+  129  cd ..
+  130  ls
+  131  cd logs
+  132  ls
+  133  touch log0.md
+  134  ls
+  135  cd ..
+  136  ls
+  137  cd projects
+  138  ls
+  139  touch project0.md
+  140  ls
+  141  cd ..
+  142  cd notes
+  143  cd lecture_notes/
+  144  ls
+  145  cd ..
+  146  cd ..
+  147  git add .
+  148  git commit -m "Added all folders"
+  149  git push
+  150  git remote -v
+  151  git add .
+  152  git commit -m "Added a picture to my notes"
+  153  git push
+  154  git add .
+  155  git commit -m "Updated command references"
+  156  git push
+  157  man wc
+  158  git add .
+  159  git commit -m "Wrote part of input/output notes from lecture 3"
+  160  git push
+  161  cd notes
+  162  cd lecture_notes/
+  163  ls
+  164  git add L04_data_wrangling_using_linux_commands.md 
+  165  git commit -m "Made a minor correction"
+  166  git push
+  167  git add L04_data_wrangling_using_linux_commands.md 
+  168  git commit -m "Made visual changes"
+  169  git push
+  170  git add L04_data_wrangling_using_linux_commands.md 
+  171  git commit -m "Made FINAL visual changes to wrangling commands section"
+  172  git push
+  173  cd ~
+  174  ls
+  175  cd DATE_FILES/
+  176  ls
+  177  ls | wc 
+  178  man wc
+  179  cd ~/Desktop/Data_Science_in_Economics_BEE2041/notes
+  180  ls
+  181  cd lecture_notes/
+  182  ls
+  183  git add L04_data_wrangling_using_linux_commands.md 
+  184  git commit "Made some changes and wanted to check"
+  185  git commit -m "Made some changes and wanted to check"
+  186  git push
+  187  git commit -m
+  188  git add L04_data_wrangling_using_linux_commands.md 
+  189  git commit -m
+  190  git commit -m "one more time"
+  191  git push
+  192  git add L04_data_wrangling_using_linux_commands.md 
+  193  git commit -m "one more time2"
+  194  git push
+  195  git add L04_data_wrangling_using_linux_commands.md 
+  196  git commit -m "one more time3"
+  197  git push
+  198  git add L04_data_wrangling_using_linux_commands.md 
+  199  git commit -m "Done with the operator table"
+  200  git push
+  201  git add .
+  202  git commit -m "Done Again"
+  203  git add command_reference.md
+  204  cd ..
+  205  ls
+  206  git add .
+  207  git commit -m "Done again"
+  208  git push
+  209  cd ~
+  210  cd DATE_FILES/
+  211  ls | grep "2025" > rediropera
+  212  cat rediropera
+  213  wc rediropera
+  214  ls | grep "2025" >> rediropera
+  215  wc rediropera
+  216  ls | grep "2025" > rediropera
+  217  wc rediropera
+  218  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  219  cd notes
+  220  cd lecture_notes/
+  221  ls
+  222  git add L04_data_wrangling_using_linux_commands.md 
+  223  git commit -m "2nd study session of the day"
+  224  git push
+  225  ls
+  226  cd ~
+  227  cd DATA_FILES
+  228  ls
+  229  cd DATE_FILES/
+  230  diff 2017_01_01.txt 2017_01_02.txt
+  231  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  232  cd notes
+  233  cd lecture_notes/
+  234  git add L04_data_wrangling_using_linux_commands.md 
+  235  git commit -m "tried diff"
+  236  git push
+  237  git add L04_data_wrangling_using_linux_commands.md 
+  238  git commit -m "Made a correction"
+  239  git push
+  240  brew install tree
+  241  `HOMEBREW_NO_ENV_HINTS=1`
+  242  HOMEBREW_NO_ENV_HINTS=1
+  243  man tree
+  244  tree
+  245  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  246  code .
+  247  cd projects
+  248  touch bee2041_project.md
+  249  ls
+  250  git add projects
+  251  git add bee2041_project.md 
+  252  git commit "Created my project markdown"
+  253  git commit -m "Created my project markdown"
+  254  git push
+  255  cd ..
+  256  code .
+  257  ls
+  258  cd Downloads
+  259  head WB_HCP_UNE_2EAP_MF_Y.csv
+  260  tail -n +2 WB_HCP_UNE_2EAP_MF_Y.csv | awk -F',' '$10=="_T"' | awk -F',' '{print $6","$24","$25}' > youth_unemp.txt
+  261  cat youth_unemp.txt
+  262  head -n 10 WB_HCP_UISXGDPFSGOV.csv
+  263  tail -n +2 WB_HCP_UISXGDPFSGOV.csv | awk -F',' '$10=="_T" && $25!=""' | awk -F',' '{print $6","$24","$25}' edu.txt
+  264  tail -n +2 WB_HCP_UISXGDPFSGOV.csv | awk -F',' '$10=="_T" && $25!=""' | awk -F',' '{print $6","$24","$25}' > edu.txt
+  265  head -n 10 edu.txt
+  266  sort youth_unemp.txt > youth_sorted.txt
+  267  sort edu.txt > edu_sorted.txt
+  268  awk -F',' '{print $1"_"$2","$3}' youth_sorted.txt > youth_key.txt
+  269  awk -F',' '{print $1"_"$2","$3}' youth_sorted.txt > youth_key.txt
+  270  awk -F',' '{print $1"_"$2","$3}' edu_sorted.txt > edu_key.txt
+  271  join -t',' youth_key.txt edu_key.txt > merged.txt
+  272  awk -F',' '
+  273  {
+  274      x=$2
+  275      y=$3
+  276      sumx+=x
+  277      sumy+=y
+  278      sumxy+=x*y
+  279      sumx2+=x*x
+  280      sumy2+=y*y
+  281      n++
+  282  }
+  283  END {
+  284      numerator = n*sumxy - sumx*sumy
+  285      denominator = sqrt((n*sumx2 - sumx^2)*(n*sumy2 - sumy^2))
+  286      r = numerator / denominator
+  287      print "Observations:", n
+  288      print "Correlation:", r
+  289  }
+  290  ' merged.txt
+  291  wc -l merged.txt
+  292  head merged.txt
+  293  cd ~/Desktop/
+  294  cd Data_Science_in_Economics_BEE2041/
+  295  code .
+  296  code .
+  297  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  298  ls
+  299  code .
+  300  man code
+  301  echo $SHELL
+  302  which code
+  303  cd notes
+  304  code .
+  305  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  306  code .
+  307  check wget
+  308  man wget
+  309  ls
+  310  mkdir bee2041project
+  311  mv ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv bee2041project
+  312  mv series-220226.csv bee2041project
+  313  cd bee2041project
+  314  ls
+  315  mv ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv HPI.csv
+  316  ls
+  317  mv HPI.csv uk_house_prices.csv
+  318  mv series-220226.csv uk_household_income.csv
+  319  ls
+  320  head -n 5 uk_household_income.csv 
+  321  head -n 30 uk_household_income.csv 
+  322  code .
+  323  head -n 5 uk_house_prices.csv
+  324  awk '{print $1}' uk_house_prices.csv
+  325  cd ~
+  326  ls
+  327  rm -rf bee2041project
+  328  ls
+  329  ls
+  330  ls
+  331  head -n 5 ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  332  head -n 5 ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  333  awk '{print $1}' ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  334  awk '{print $15}' ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  335  awk '{print $8}' ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  336  awk '{print $4}' ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  337  awk '{print $2}' ukhpi-property-type-avg-united-kingdom-from-1997-01-01-to-2026-01-01.csv
+  338  man wget
+  339  wget <https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26>
+  340  wget https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26
+  341  ls
+  342  ls
+  343  mkdir bee2041project
+  344  cd bee2041project/
+  345  ls
+  346  mv UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK uk_house_prices.txt
+  347  cat UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK
+  348  cd UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK
+  349  mv UK-HPI-full-file-2025-12.csv* uk_house_prices.txt
+  350  mv UK-HPI-full-file-2025-12.csv uk_house_prices.txt
+  351  $ mv UK-HPI-full-file-2025-12.csv* uk_house_prices.txt
+  352  $ mv UK-HPI-full-file-2025-12.csv uk_house_prices.csv
+  353  mv UK-HPI-full-file-2025-12.csv uk_house_prices.csv
+  354  cd ..
+  355  ls
+  356  mv UK-HPI-full-file-2025-12.csv ~/bee2041project
+  357  ls
+  358  cd bee2041project/
+  359  ls
+  360  cat UK-HPI-full-file-2025-12.csv 
+  361  mv UK-HPI-full-file-2025-12.csv uk_house_prices.txt
+  362  ls
+  363  awk '{print $1}' uk_house_prices.txt
+  364  cp uk_house_prices.txt uk_house_prices_jic.txt
+  365  ls
+  366  man sort
+  367  sort -n sort file.txt sorts lines in a file.
+  368  sort -n uk_house_prices_jic.txt
+  369  grep '2025-12-0ls1'
+  370  ls
+  371  head uk_house_prices_jic.txt | sed -E 's|^([0-9]{2})/([0-9]{2})/([0-9]{4})|\3-\2-\1|'
+  372  head -n 2 uk_house_prices_jic.txt
+  373  head -n 15 uk_house_prices_jic.txt
+  374  tail -n 15 uk_house_prices_jic.txt
+  375  awk -F, 'NR==1{print $1","$2","$9; next} {print $1","$2","$9}' uk_house_prices_jic.txt > prices_date_reg_avg.txt
+  376  ls
+  377  head -n 5 prices_date_reg_avg.txt 
+  378  tail -n 5 prices_date_reg_avg.txt 
+  379  ls
+  380  rm -rf uk_house_prices_jic copy.txt.zip
+  381  rm uk_house_prices_jic copy.txt
+  382  ls
+  383  ls
+  384  awk -F, 'NR>1 && $2 ~ /^United Kingdom/ {print $2}' uk_house_prices_jic.txt | sort | uniq | head -n 50
+  385  awk -F, 'NR>1 && $2=="United Kingdom" && $9!="" {print $1","$9}' uk_house_prices_jic.txt > uk_price_sa_raw.csv
+  386  head uk_price_sa_raw.csv
+  387  wc -l uk_price_sa_raw.csv
+  388  sed -E 's|^([0-9]{2})/([0-9]{2})/([0-9]{4})|\3-\2-\1|' uk_price_sa_raw.csv > uk_price_sa_iso.csv
+  389  head uk_price_sa_iso.csv
+  390  sort uk_price_sa_iso.csv > uk_price_sa_sorted.csv
+  391  awk -F, '
+  392  {
+  393    split($1,d,"-"); y=d[1]; m=d[2]+0;
+  394    q=int((m-1)/3)+1;
+  395    key=y"-Q"q;
+  396    sum[key]+=$2; n[key]+=1
+  397  }
+  398  END{ for(k in sum) print k","sum[k]/n[k] }
+  399  ' uk_price_sa_sorted.csv | sort > uk_price_sa_quarterly.csv
+  400  head uk_price_sa_quarterly.csv
+  401  wc -l uk_price_sa_quarterly.csv
+  402  tail uk_price_sa_quarterly.csv 
+  403  cat uk_price_sa_quarterly.csv 
+  404  cd ..
+  405  mv gross-disposable-household-income-per-head-line-chart-data.csv bee2041project
+  406  ls
+  407  cd bee2041project/
+  408  ls
+  409  head -n 2 gross-disposable-household-income-per-head-line-chart-data.csv
+  410  head -n 5 gross-disposable-household-income-per-head-line-chart-data.csv
+  411  head -n 10 gross-disposable-household-income-per-head-line-chart-data.csv
+  412  head -n 20 gross-disposable-household-income-per-head-line-chart-data.csv
+  413  sed -n '/^Area code/,$p' gross-disposable-household-income-per-head-line-chart-data.csv > income_clean.csv
+  414  head income_clean.csv
+  415  awk -F, 'NR>1 && $2=="United Kingdom" {print $3","$4}' income_clean.csv > income_uk_raw.csv
+  416  head income_uk_raw.csv
+  417  sort income_uk_raw.csv > income_uk_sorted.csv
+  418  head income_uk_sorted.csv
+  419  awk -F, '
+  420  {
+  421    split($1,d,"-"); y=d[1];
+  422    sum[y]+=$2; n[y]+=1
+  423  }
+  424  END{
+  425    for(y in sum) print y","sum[y]/n[y]
+  426  }' uk_price_sa_sorted.csv | sort > uk_price_sa_annual.csv
+  427  head uk_price_sa_annual.csv
+  428  2004,xxxxx
+  429  2005,xxxxx
+  430  ...join -t, uk_price_sa_annual.csv income_uk_sorted.csv > merged_annual.csv
+  431  join -t, uk_price_sa_annual.csv income_uk_sorted.csv > merged_annual.csv
+  432  head merged_annual.csv
+  433  awk -F, '{print $1","$2/$3}' merged_annual.csv > affordability_annual.csv
+  434  awk -F, '$1 < 2016 {print}' affordability_annual.csv > pre_brexit.csv
+  435  awk -F, '$1 >= 2016 {print}' affordability_annual.csv > post_brexit.csv
+  436  awk -F, '$1 < 2016 {print}' affordability_annual.csv > pre_brexit.csv
+  437  awk -F, '$1 >= 2016 {print}' affordability_annual.csv > post_brexit.csv
+  438  awk -F, '{sum+=$2; n+=1} END{print sum/n}' pre_brexit.csv
+  439  awk -F, '{sum+=$2; n+=1} END{print sum/n}' post_brexit.csv
+  440  code .
+  441  touch projectworkflow.sh
+  442  code projectworkflow.sh
+  443  history > history.txt
+  444  code history.txt
+  445  cat uk_household_income.csv
+  446  cat uk_house_prices.csv
+  447  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  448  code .
+  449  cd /
+  450  cowsay 'Hello World!'
+  451  sl
+  452  cmatric
+  453  cmatrix
+  454  su -
+  455  su -
+  456  su
+  457  ls -l
+  458  cd /
+  459  ls -l
+  460  ls -l /
+  461  tree -L 2 /
+  462  tree -L 2 /
+  463  clear
+  464  tree -L 2 /
+  465                                  /
+  466   ─────────────────────────────────────────────────────────────
+  467   /bin        essential binaries
+  468   /boot       boot loader files
+  469   /etc        configuration files
+  470   /usr        user programs
+  471   /var        variable data
+  472   /dev        devices
+  473   /home       user homes
+  474   /lib        libraries
+  475   /mnt        mount points
+  476   /opt        optional software
+  477   /root       root home
+  478   /tmp        temporary files
+  479  man tree
+  480  man bash
+  481  man awk
+  482  mkdir bee2041d
+  483  cd bee2041d
+  484  wget "https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26"
+  485  ls
+  486  mv UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26 UK-HPI-full-file-2025-12.csv | mv UK-HPI-full-file-2025-12.csv ukhpi.csv
+  487  ls
+  488  mv UK-HPI-full-file-2025-12.csv ukhpi.csv
+  489  mv UK-HPI-full-file-2025-12.csv ukhpi.txt
+  490  cd UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26
+  491  rm -rf bee2041d
+  492  1
+  493  ls
+  494  rm -rf UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26
+  495  ls
+  496  rm -rf "UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26"
+  497  ls
+  498  cd ..
+  499  rm -rf bee2041d
+  500  ls
+  501  cd ~/Desktop/Data_Science_in_Economics_BEE2041/
+  502  mkdir assignment1
+  503  cd assignment1/
+  504  wget -O uk_hpi.csv "https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26"
+  505  ls
+  506  touch workflowd.sh
+  507  code workflowd.sh
+  508  cd ..
+  509  code .
+  510  cd assignment1/
+  511  head -n 10 uk_hpi.csv
+  512  tail -n 10 uk_hpi.csv
+  513  head -n 2 uk_hpi.csv | wc -l
+  514  head -n 2 uk_hpi.csv
+  515  head -n 1 uk_hpi.csv 
+  516  sed -E 's|([0-9]{2})/([0-9]{2})/([0-9]{4})|\3-\2-\1|' uk_hpi.csv > uk_hpi_fixed_delimiter.csv
+  517  head uk_hpi_fixed_delimiter.csv 
+  518  #!/bin/bash
+  519  # A simple script to print hello world!
+  520  chmod +x workflowd.sh
+  521  #!/bin/bash
+  522  # A simple script to print hello world!
+  523  echo 'Hello World!'
+  524  chmod +x workflowd.sh
+  525  git add .
+  526  git commit -m "Added my project directory"
+  527  git push
+  528  ls
+  529  code workflowd.sh
+  530  cd ..
+  531  code .
+  532  chmod +x workflowd.sh
+  533  ls
+  534  cd assignment1/
+  535  chmod +x workflowd.sh
+  536  ls -l
+  537  ./workflowd.sh
+  538  ./workflowd.sh
+  539  emacs workflowd.sh -nw
+  540  touch workflowd.sh
+  541  code workflowd.sh
+  542  tail -n +2 uk_hpi_fixed_delimiter.csv | \ grep "United Kingdom" | \ awk -F ',' '{ year=substr($1, 1, 4); sum[year]+=$4; count[year]++} END {for (year in sum) print year, sum[year]/count[year] }' | \ sort > uk_hpi_annual_average.csv
+  543  $ tail -n +2 uk_hpi_fixed_delimiter.csv | \ grep "United Kingdom" | \ awk -F ',' '{ year=substr($1, 1, 4); sum[year]+=$4; count[year]++} END {for (year in sum) print year, sum[year]/count[year] }' | \ sort > uk_hpi_annual_average.csv
+  544  -bash:  awk: command not found
+  545  -bash:  grep: command not found
+  546  clear
+  547  tail -n +2 uk_hpi_fixed_delimiter.csv | grep "United Kingdom" | awk -F ',' '{ year=substr($1, 1, 4); sum[year]+=$4; count[year]++} END {for (year in sum) print year, sum[year]/count[year] }' | sort > uk_hpi_annual_average.csv
+  548  cat uk_hpi_annual_average.csv
+  549  ls
+  550  mv gross-disposable-household-income-per-head-line-chart-data.csv uk_gdhi.csv
+  551  history > historyproject.txt
