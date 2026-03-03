@@ -11,19 +11,31 @@
 
 
 ```bash
+# instead of manually downloading the datasets, I used `wget` command to retrieve data from landregistry.gov.uk, ultimately making the process more time efficient and keeping data consistent
 wget -O uk_hpi.csv "https://publicdata.landregistry.gov.uk/market-trend-data/house-price-index-data/UK-HPI-full-file-2025-12.csv?utm_medium=GOV.UK&utm_source=datadownload&utm_campaign=full_fil&utm_term=9.30_18_02_26"
 
 
+# I used `sed` command in order to change the date format from dd/mm/yyyy to yyyy-mm-dd and later saved the output to a new file
 
-388  sed -E 's|([0-9]{2})/([0-9]{2})/([0-9]{4})|\3-\2-\1|' uk_hpi.csv > uk_hpi_fixed_delimiter.csv
-  389  head uk_hpi_fixed_delimiter.csv 
+# The main reason behind this is to avoid inaccurate outputs
 
-  415  tail -n +2 uk_hpi_fixed_delimiter.csv | grep "United Kingdom" | awk -F ',' '{ year=substr($1, 1, 4); sum[year]+=$4; count[year]++} END {for (year in sum) print year, sum[year]/count[year] }' | sort > uk_hpi_annual_average.csv
-  416  cat uk_hpi_annual_average.csv
-  417  ls
-  418  mv gross-disposable-household-income-per-head-line-chart-data.csv uk_gdhi.csv
+sed -E 's|([0-9]{2})/([0-9]{2})/([0-9]{4})|\3-\2-\1|' uk_hpi.csv > uk_hpi_fixed_delimiter.csv
 
-  423  head -n 2 uk_hpi.csv # Check the first two lines of the data file to understand its structure and format
+# Using `head` and `tail` commands, I was able to check whether I had the right data by checking first and last few lines of the .csv file
+head uk_hpi_fixed_delimiter.csv 
+# Additionally I used `|` to run multiple commands after one another
+# By utilising `grep`, `awk` and `sort` I was able to: 
+# - convert the dataset downloaded from the web from monthly to average annual house price index
+# - `sort` and the symbol `>` sorted data in current file and then appended it to a new file called "uk_hpi_annual_average.csv"
+tail -n +2 uk_hpi_fixed_delimiter.csv | grep "United Kingdom" | awk -F ',' '{ year=substr($1, 1, 4); sum[year]+=$4; count[year]++} END {for (year in sum) print year, sum[year]/count[year] }' | sort > uk_hpi_annual_average.csv
+
+# `cat` command is used to print the file contents
+cat uk_hpi_annual_average.csv
+
+
+mv gross-disposable-household-income-per-head-line-chart-data.csv uk_gdhi.csv
+
+head -n 2 uk_hpi.csv # Check the first two lines of the data file to understand its structure and format
   424  head -n 2 uk_hpi.csv | wc -l # Count the number of lines in the first two lines of the data file to confirm that it contains the expected number of lines (2)
   425  tail -n 2 uk_hpi.csv
   426  sed -E 's|([0-9]{2})/([0-9]{2})/([0-9]{4})|\3-\2-\1|' uk_hpi.csv > uk_hpi_fixed_delimiter.csv
